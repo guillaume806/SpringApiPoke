@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokemon Details</title>
+</head>
+<body>
+<h1>Pokemon Details</h1>
+<div>
+    <p><strong>Name:</strong> <span th:text="${pokemon.name}"></span></p>
+    <p><strong>National Dex Number:</strong> <span th:text="${pokemon.id}"></span></p>
+    <p><strong>Types:</strong> <span th:text="${pokemon.types}"></span></p>
+    <p><strong>Abilities:</strong> <span th:text="${pokemon.abilities}"></span></p>
+    <p><strong>Height:</strong> <span th:text="${pokemon.height}"></span></p>
+    <p><strong>Weight:</strong> <span th:text="${pokemon.weight}"></span></p>
+    <img th:src="${pokemon.imageUrl}" alt="Pokemon Image"/>
+</div>
+</body>
+</html>
